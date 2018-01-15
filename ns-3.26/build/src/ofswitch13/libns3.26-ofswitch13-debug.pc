@@ -1,0 +1,10 @@
+prefix=/usr/local
+libdir=/usr/local/lib
+includedir=/usr/local/include/ns3.26
+
+Name: libns3-ofswitch13
+Description: ns-3 module ns3-ofswitch13
+Version: 3.26
+Libs: -L${libdir} -Wl,-Bdynamic -lns3.26-ofswitch13-debug -L/home/parallels/ofsoftswitch13/udatapath -ldl -lnbee -lns3ofswitch13
+Cflags: -I${includedir} -DNS3_OFSWITCH13 -I/home/parallels/ofsoftswitch13 -I/home/parallels/ofsoftswitch13/include -I/home/parallels/ofsoftswitch13/lib -I/home/parallels/ofsoftswitch13/oflib -I/home/parallels/ofsoftswitch13/oflib-exp -I/home/parallels/ofsoftswitch13/secchan -I/home/parallels/ofsoftswitch13/udatapath
+Requires: libns3.26-core-debug libns3.26-network-debug libns3.26-internet-debug libns3.26-csma-debug libns3.26-point-to-point-debug libns3.26-virtual-net-device-debug libns3.26-applications-debug
